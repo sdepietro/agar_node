@@ -1,0 +1,14 @@
+{
+    "port": 80,
+    "maxSizeMass": 200,
+    "maxMoveSpeed": 7,
+    "massDecreaseRatio": 1000,
+    "foodMass": 1,
+    "newFoodPerPlayer": 50,
+    "respawnFoodPerPlayer": 2,
+    "maxFoodCount": 50,
+    "noPlayer": 0,
+    "defaultPlayerSize": 50,
+    "eatableMassDistance": 5,
+    "adminPass": "thefakeagariopass"
+}

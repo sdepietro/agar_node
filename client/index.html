@@ -1,0 +1,56 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Agario</title>
+
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+
+<body oncontextmenu="return false">
+  <div id="gameAreaWrapper" style="display:none;">
+    <div id="status">Players: 0</div>
+    <div class="chatbox">
+      <ul id="chatList" class="chat-list"></ul>
+      <input id="chatInput" type="text" class="chat-input" placeholder="Chat here..." />
+    </div>
+    <canvas tabindex="1" id="cvs"></canvas>
+  </div>
+  <div id="startMenuWrapper">
+    <div id="startMenu">
+      <p id="title">www.PlayAgarIO.tk</p>
+      <small>An Agario.io Alterative</small>
+      <input type="text" tabindex="0" autofocus placeholder="Enter your name here" id="playerNameInput" />
+      <b class="input-error">Nick must be alphanumeric characters only!</b>
+      <br />
+      <button id="startButton">Play</button>
+      <br/>
+      <h3>Gameplay</h3>
+      <ul>
+        <li>Move your mouse on the screen to move your character</li>
+        <li>Eat food and other players in order to grow your character (food respawns every time a player eats it)</li>
+        <li>A player's mass is the number of food particles eaten</li>
+        <li>Objective: Try to get fat and eat other players</li>
+      </ul>
+      <div id="advert">
+        <script type="text/javascript" src="http://srvpub.com/adServe/banners?tid=16805_55473_2"></script>
+      </div>
+      <center>
+        <small>[Advertisments Support The Servers!]</small><br />
+        <a href="http://www.ColeGreenlee.com/"><small>[Check Out The Developer!]</small></a>
+      </center>
+
+    </div>
+
+  </div>
+  <audio hidden autoplay loop="auto">
+    <source src="song.mp3" type="audio/ogg">
+  </audio>
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
